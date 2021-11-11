@@ -6,7 +6,7 @@
 
       
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
         <title>Contacto</title>
     </head>
     <body>
