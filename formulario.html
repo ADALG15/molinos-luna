@@ -3,7 +3,14 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		function confirmar(){
+        			alert("Datos enviados correctamente")
+        		}
+        	});
+        </script>
       
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap.min.css">
@@ -39,7 +46,7 @@
         <h1 class="display-6 text-center"><br>Formulario de Contacto</h1>
         <br>
         <div class="container bg-dark text-white">
-        <form method="post" action="guardar.php">
+        <form>
             <br><br>
             <div class="form-group">
                 <label for="exampleInputEmail1">Nombre</label>
@@ -65,7 +72,7 @@
                 <label for="exampleInputEmail6">Telefono</label>
                 <input type="text" name="telefono" class="form-control" id="exampleInputEmail6" aria-describedby="emailHelp">
             </div>
-            <button type="submit" name="guardar" class="btn btn-light">Enviar</button><br>
+            <button type="submit" name="guardar" class="btn btn-light" onclik="confirmar();">Enviar</button><br>
             <br>
         </form>
         </div>
